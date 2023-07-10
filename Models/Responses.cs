@@ -27,7 +27,7 @@
         {
             public int code { get; set; }
             public string message { get; set; }
-            public List<VitalsDatum> data { get; set; }
+            public VitalsDatum data { get; set; }
 
         }
     }

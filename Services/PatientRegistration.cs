@@ -108,11 +108,11 @@ namespace InterviewWebAPI.Services
                 MySqlDataReader reader = await command.ExecuteReaderAsync();
 
 
-                List<VitalsDatum> result = new();
+                VitalsDatum result = new();
 
                 while (reader.Read())
                 {
-                    result = reader.MapToObject<List<VitalsDatum>>();
+                    result = reader.MapToObject<VitalsDatum>();
                 }
 
                 GetVItalsDetailsResponse response = new()
